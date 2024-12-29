@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* Default text color to white for readability */
+  }
+  
+  .calculator {
+    width: 300px;
+    background: #1e1e1e; /* Dark gray calculator background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); /* Subtle white shadow */
+  }
+  
+  #display {
+    padding: 20px;
+    font-size: 2rem;
+    text-align: right;
+    background: #333; /* Darker gray for the display */
+    color: #fff; /* White text for display */
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 10px;
+  }
+  
+  .btn {
+    padding: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    background: #555; /* Medium gray for buttons */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #777; /* Lighter gray on hover */
+  }
+  
+  .operator {
+    background: #f9c74f; /* Yellow for operator buttons */
+    color: #000; /* Black text for contrast */
+  }
+  
+  .operator:hover {
+    background: #f08a5d; /* Orange hover effect for operators */
+  }
+  
+  .clear {
+    background: #f94144; /* Bright red for clear button */
+    color: white;
+  }
+  
+  .clear:hover {
+    background: #f3722c; /* Orange hover for clear button */
+  }
+  
